@@ -2,21 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { darkTheme } from './theme';
-import App from './App';
+import Router from './Router';
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
-        <BrowserRouter>
-          <Switch>
-            <Route path={`${process.env.PUBLIC_URL}/`} >
-              <App />
-            </Route>
-          </Switch>
-        </BrowserRouter>
+        <Router />
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
