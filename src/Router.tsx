@@ -5,7 +5,7 @@ function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path={`${process.env.PUBLIC_URL}/`} >
+        <Route path={`${process.env.PUBLIC_URL}`} >
           <App />
         </Route>
       </Switch>
