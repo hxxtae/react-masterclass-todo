@@ -23,7 +23,7 @@ export const toDoCategory = atom<Category>({
 
 export const toDoState = atom<ITodo[]>({
   key: 'todo',
-  default: storages
+  default: storages || []
 });
 
 export const toDoSelector = selector({

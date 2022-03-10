@@ -13,6 +13,27 @@ const CreateBox = styled.div`
   align-items: flex-start;
 `;
 
+const TodoUlWrapper = styled.div`
+  margin-top: 50px;
+  height: 600px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 3px;
+    background-color: white;
+    border-radius: 20px;
+  }
+`;
+
 const TodoSection = styled.section`
   margin-top: 50px;
 
@@ -27,7 +48,6 @@ const TodoSection = styled.section`
     align-items: flex-start;
     flex-wrap: wrap;
     flex-shrink: 1;
-    margin-top: 50px;
   }
 
 `;
@@ -51,13 +71,15 @@ function ToDoList() {
       </CreateBox>
       <TodoSection>
         <strong>{title()}</strong>
-        <ul>
-          {
-            todos.map((todo) =>
-              (<ToDo key={todo.id} {...todo}/>)
-            )
-          }
-        </ul>
+        <TodoUlWrapper>
+          <ul>
+            {
+              todos.map((todo) =>
+                (<ToDo key={todo.id} {...todo}/>)
+              )
+            }
+          </ul>
+        </TodoUlWrapper>
       </TodoSection>
     </Box>
   );
