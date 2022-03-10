@@ -8,6 +8,9 @@ function Router() {
         <Route path={process.env.PUBLIC_URL + "/"} >
           <ToDoList />
         </Route>
+        <Route path={process.env.PUBLIC_URL + "/:todoId"} >
+          <ToDoList />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
