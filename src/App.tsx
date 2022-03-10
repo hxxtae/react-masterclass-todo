@@ -291,16 +291,16 @@ const TodoWrapper = styled.div`
 console.log('App');
 
 function App() {
-    return (
-        <>
-            <GlobalStyles />
-            <TodoContainer>
-                <TodoWrapper>
-                    <ToDoList />
-                </TodoWrapper>
-            </TodoContainer>
-        </>
-    );
+  return (
+    <>
+      <GlobalStyles />
+      <TodoContainer>
+        <TodoWrapper>
+          <ToDoList />
+        </TodoWrapper>
+      </TodoContainer>
+    </>
+  );
 }
 
 export default App;
