@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import ToDoList from './routes/ToDoList';
+import Router from './Router';
 
 const GlobalStyles = createGlobalStyle`
   // 가능한 링크(import url())는 public/index.html 안에 선언해 준다.
@@ -296,7 +296,7 @@ function App() {
       <GlobalStyles />
       <TodoContainer>
         <TodoWrapper>
-          <ToDoList />
+          <Router />
         </TodoWrapper>
       </TodoContainer>
     </>

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme } from './theme';
-import Router from './Router';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
       <ThemeProvider theme={darkTheme}>
-        <Router />
+        <App/>
       </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>,
