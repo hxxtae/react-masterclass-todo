@@ -3,7 +3,7 @@ import ToDoList from './routes/ToDoList';
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <Switch>
         <Route path={process.env.PUBLIC_URL + "/"} >
           <ToDoList />
