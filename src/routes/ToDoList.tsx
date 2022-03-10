@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { useRecoilValue } from 'recoil';
 import { toDoCategory, toDoSelector, Category } from '../atoms';
-import CategoryList from './CategoryList';
-import CreateToDo from './CreateToDo';
-import ToDo from './ToDo';
+import CategoryList from '../components/CategoryList';
+import CreateToDo from '../components/CreateToDo';
+import ToDo from '../components/ToDo';
 
 const Box = styled.div``;
 
