@@ -16,7 +16,7 @@ const CreateBox = styled.div`
 const TodoUlWrapper = styled.div`
   margin-top: 50px;
   height: 600px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &::-webkit-scrollbar {
     width: 3px;
